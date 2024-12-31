@@ -1,0 +1,23 @@
+.carousel-container {
+    position: relative;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 30px; 
+    height: 30px; 
+    top: 50%; 
+    transform: translateY(-50%);
+    z-index: 5; 
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 20px; 
+    height: 20px;
+  }
+  
+  .carousel-caption button {
+    z-index: 10; 
+  }
+  

@@ -37,18 +37,18 @@ const Footer = () => {
           <h4>Important Links</h4>
           <ul style={{ listStyleType: "none", padding: 0, margin: 0 }}>
             <li>
-              <a href="#about" style={{ color: "#61dafb", textDecoration: "none" }}>
-                About Us
+              <a href="/live-stream" style={{ color: "#61dafb", textDecoration: "none" }}>
+                Live Stream
               </a>
             </li>
             <li>
-              <a href="#services" style={{ color: "#61dafb", textDecoration: "none" }}>
-                Services
+              <a href="/pooja" style={{ color: "#61dafb", textDecoration: "none" }}>
+                Pooja
               </a>
             </li>
             <li>
-              <a href="#contact" style={{ color: "#61dafb", textDecoration: "none" }}>
-                Contact
+              <a href="/donation" style={{ color: "#61dafb", textDecoration: "none" }}>
+                Donation
               </a>
             </li>
           </ul>

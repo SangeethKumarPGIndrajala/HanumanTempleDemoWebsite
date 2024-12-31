@@ -136,7 +136,7 @@ function Home() {
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeIn}
       >
-        <PoojasSection />
+        <PoojasSection isHome={true}/>
       </motion.div>
       <motion.div
         initial="hidden"
