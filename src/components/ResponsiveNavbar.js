@@ -7,12 +7,12 @@ import { Link } from 'react-router-dom';
 function ResponsiveNavbar() {
   // get poojaOrderSlice items from redux store
   const poojaOrders = useSelector(state => state.poojaOrders);
-  console.log("Pooja orders ", poojaOrders);
+  // console.log("Pooja orders ", poojaOrders);
   const cartItems = poojaOrders?.poojaOrders?.length ? poojaOrders?.poojaOrders?.length : 0;
   return (
     <Navbar bg="light" expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand href="/" className="text-dark">Temple</Navbar.Brand>
+        <Navbar.Brand className="text-dark"><Link to="/" style={{ textDecoration: 'none', color: 'black' }}>Hanuman Temple</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Navbar.Offcanvas
           id="offcanvasNavbar"

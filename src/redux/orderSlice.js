@@ -16,7 +16,7 @@ const poojaOrderSlice = createSlice({
         poojaPrice: action.payload.poojaPrice,
         poojaTime: action.payload.poojaTime,
       });
-      state.totalPrice += action.payload.poojaPrice;
+      state.totalPrice = parseFloat(action.payload.poojaPrice) + parseFloat(state.totalPrice);
       toast.success("Pooja order added successfully!");
     },
     resetPoojaOrders: (state) => {

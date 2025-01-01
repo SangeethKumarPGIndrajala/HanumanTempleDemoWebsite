@@ -8,6 +8,7 @@ import Pooja from "./pages/Pooja";
 import Donation from "./pages/Donation";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
+import Checkout from "./pages/Checkout";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/live-stream" element={<LiveStream/>}/>
         <Route path="/pooja" element={<Pooja/>}/>
         <Route path="/donation" element={<Donation/>}/>
+        <Route path="/checkout" element={<Checkout/>}/>
       </Routes>
       <ToastContainer/>
     </>
