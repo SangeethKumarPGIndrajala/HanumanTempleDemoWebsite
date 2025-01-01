@@ -1,23 +1,19 @@
-import React from 'react'
-import ResponsiveNavbar from '../components/ResponsiveNavbar'
-import PoojasSection from '../components/PoojasSection'
-import { motion } from 'framer-motion'
+import React from "react";
+import ResponsiveNavbar from "../components/ResponsiveNavbar";
+import PoojasSection from "../components/PoojasSection";
+
 
 function Pooja() {
-  const fadeIn = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-  };
+
+
   return (
-    <motion.div
-          initial="hidden"
-          whileInView={"visible"}
-          viewport={{ once: true, amount: 0.2 }}
-          variants={fadeIn}>
-        <ResponsiveNavbar/>
+    <div style={{ opacity: 1 }}>
+      <ResponsiveNavbar />
+      <>
         <PoojasSection />
-    </motion.div>
-  )
+      </>
+    </div>
+  );
 }
 
-export default Pooja
+export default Pooja;
